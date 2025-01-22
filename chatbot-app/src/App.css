@@ -1,0 +1,105 @@
+/* Updated Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #e6f0ff, #f4f7fa);
+  color: #333;
+}
+
+/* Chat Container */
+.chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Header */
+.chat-header {
+  background: linear-gradient(90deg, #007BFF, #0056b3);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chat-header h1 {
+  margin: 0;
+}
+
+/* Chat History */
+.chat-history {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.chat-message.bot {
+  flex-direction: row;
+}
+
+.chat-message.user {
+  flex-direction: row-reverse;
+}
+
+.message-content {
+  background-color: #eaeaea;
+  padding: 10px 15px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.message-content.user {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Add more nth-child selectors as needed */
+
+.message-content li {
+  margin-left: 10px;
+  list-style-type: disc;
+}
+
+.bot-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Chat Loading */
+.chat-loading {
+  font-size: 1rem;
+  text-align: center;
+  color: #007BFF;
+  margin-top: 10px;
+}
+
+/* Chat Input */
+.chat-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+
+
